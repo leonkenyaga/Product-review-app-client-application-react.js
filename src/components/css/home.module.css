@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+.main{
+    background-color: rgb(21, 32, 43);
+    height: 570px;
+    color: white;
+}
+.subdiv{
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 750px 1fr;
+}
+
+.leaf{
+    height: 60px;
+    width: 60px;
+    margin-left: 340px;
+}
+.subdiv1{
+    height: 140px;
+    margin-top: 200px;
+    color: white;
+    text-align: center;
+}
+.subdiv2{
+    height: 100px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+h1{
+    margin-left: auto;
+}
+
+.create_account_button{
+    height:40px;
+    background-color: green;
+    color: white;
+    width: 900px;
+    border-radius: 23px;
+    border:none;
+}
+.create_account_button:hover{
+    background-color: rgb(53, 94, 59);
+}
+.create_account_button:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+.Loginbutton{
+    background-color: green;
+    color: white;
+    margin-left: 260px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 4px;
+    height: 40px;
+}
+.Loginbutton:hover{
+    background-color: rgb(53, 94, 59);
+}
+.Loginbutton:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}

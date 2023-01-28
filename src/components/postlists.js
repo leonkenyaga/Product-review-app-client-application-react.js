@@ -25,7 +25,7 @@ class Postlists  extends Component {
        // const { posts } = this.state.posts
         const { posts,error } = this.state
         return (
-            <div>
+            <div className= "postlist">
              List of user  
              {
                 posts.length ?

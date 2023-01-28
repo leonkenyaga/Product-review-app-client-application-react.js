@@ -1,0 +1,78 @@
+.main{
+    background-color: black;
+    height: 526px;
+    padding-top: 113px;
+    padding-left: 380px;
+}
+.subdiv{
+    background-color: rgb(21, 32, 43);
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.input_div{
+    height: 40px;
+    width: 150px;
+    background-color: black;
+} 
+.image_div{
+    height: 40px;
+    width: 250px;
+    text-align: center;
+}
+.leaf{
+    height: 30px;
+    width:  30px;
+}
+.subdiv2{
+    height: 240px;
+    width: 250px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+.input_div{
+    height: 40px;
+    margin-top: 30px;
+    padding: 5px;
+    width: 230px;
+    border-radius: 10px;
+} 
+.input{
+    margin-right: 175px;
+    background: none;
+    font-size: 16px;
+    background: none;
+    border: none; 
+    color: white;
+}
+.input:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+.submission_div{
+    margin-top: 30px;
+    padding:10px;
+    width: 230px;
+}
+
+.submission_button{
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+    border:none;
+}
+.submission_button:hover{
+    background-color: rgb(53, 94, 59);
+}
+.submission_button:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;  
+}

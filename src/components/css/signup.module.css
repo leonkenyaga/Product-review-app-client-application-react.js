@@ -1,0 +1,71 @@
+.main1{
+    background-color: rgb(21, 32, 43);
+    height: 700px;
+}
+.subdiv{
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+.leaf{
+    height: 60px;
+    width: 60px;
+}
+.subdiv1{
+    height: 140px;
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+}
+.subdiv2{
+    height: 300px;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.input_div{
+    height: 40px;
+    margin-top: 50px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(29, 161, 242);
+    width: 400px;
+    margin-left: 100px;
+} 
+.input{
+    margin-right: 175px;
+    color: rgb(131, 147, 160);
+    background: none;
+    font-size: 16px;
+    background: none;
+    border: none; 
+}
+.input:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.submission_div{
+    margin-top: 20px;
+    padding:10px;
+    width: 400px;
+}
+.submission_button{
+    background-color: green;
+    margin-right: 100px;
+    color: white;
+    border-radius: 10px;
+    border:none;
+    height: 40px;
+}
+.submission_button:hover{
+    background-color: rgb(53, 94, 59);
+}
+.submission_button:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;  
+}
