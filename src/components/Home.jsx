@@ -9,11 +9,12 @@ const Home = () => {
   return (
     <div className={styles.main}>
 <div className={styles.subdiv}>
+  <div className={styles.left_div}></div>
         <div className={styles.leaf_div}>
         <img src={brand} alt="" className={styles.leaf} />
         </div>
         <div className={styles.subdiv_button}>
-       <button className={styles.Loginbutton}>Login</button>
+      <Link to="signIn" ><button className={styles.Loginbutton}>Login</button></Link>
        </div>
  </div>
  

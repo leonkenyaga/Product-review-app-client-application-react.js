@@ -1,0 +1,127 @@
+
+.main{
+    height: 100%;
+}
+.divexample{
+    display:inline-block;
+
+}
+.searchbar::placeholder{
+    font-size: large;
+}
+.searchbar{
+    display: flex;
+    height: 36px;
+    flex:15;
+    min-width: 5px;
+    border: 1px solid #cccccc;
+}
+.searchbar:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px; 
+}
+.searchicon{
+    height: 30px;
+}
+.header{
+    display: flex;
+    height: 57px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+
+}
+.searchbutton{
+height: 36px;
+width: 64px;
+display:flex;
+justify-content: center;
+border:1px solid #cccccc;
+border-left: none;
+}
+.searchbutton:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px; 
+}
+.leftsection{
+    width: 100px;
+}
+.rightsection{
+    width: 200px;
+}
+.middlesection{
+flex:1;
+margin-left: 50px;
+margin-right: 50px;
+max-width: 500px;
+min-width: 5px;
+display:flex;
+align-items: center;
+}
+.productgrid{
+    display: flexbox;
+    margin-top: 65px;
+}
+.productinfo{
+    display: inline-block;
+    width: 300px;
+    margin-left: 2%;
+}
+.product{
+    width: 100%;
+    display: inline-block;
+    height: 300px;
+}
+.productname{
+    font-weight: 550;
+    text-align: center;
+    font-family:  'Roboto', sans-serif;
+}
+.productprice{
+    text-align: center;
+    font-family:  'Roboto', sans-serif;
+}
+.textinfo{
+    background-color:  rgb(153, 101, 21);
+    color: white;
+    border-radius: 0.5cm;
+    flex: 1;
+}
+.Menuicon{
+    height: 30px;
+}
+.Menubutton{
+    margin-top: 7px;
+    border: none;
+    background-color: white;
+    margin-left: 5px;
+}
+.Menubutton:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+.notifyicon{
+    height: 30px
+}
+.notifybutton{
+    border: none;
+    background-color: white;
+    margin-left: 150px;  
+}
+.notifybutton:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}

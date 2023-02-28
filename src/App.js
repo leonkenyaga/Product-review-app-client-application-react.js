@@ -5,6 +5,7 @@ import Counter from './components/Counter';
 import Login from './components/Loginpage'
 import SignUp from './components/SignUp';
 import Homepage from "./components/Homepage";
+import Postlists from "./components/postlists";
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
           <Route path="signUp" element={<SignUp />} />
           <Route path="signIn" element={<Login />} />
           <Route path="Home" element={<Homepage />} />
+          <Route path="posts" element={<Postlists />} />
         </Route>
       </Routes>
     </BrowserRouter>
