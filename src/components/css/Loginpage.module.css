@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap');
 .main{
     background-color: black;
     height: 700px;
     padding-top: 15%;
     padding-left: 38%;
+    font-family: Roboto;
+    font-weight: 800;
 }
 .subdiv{
     background-color: rgb(21, 32, 43);
