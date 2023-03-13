@@ -4,8 +4,9 @@ import Home from "./components/Home";
 import Counter from './components/Counter';
 import Login from './components/Loginpage'
 import SignUp from './components/SignUp';
-import Homepage from "./components/Homepage";
 import Postlists from "./components/postlists";
+import Post from "./components/post";
+import BasicRating from "./components/image";
 function App() {
   return (
     <BrowserRouter>
@@ -14,8 +15,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="signUp" element={<SignUp />} />
           <Route path="signIn" element={<Login />} />
-          <Route path="Home" element={<Homepage />} />
           <Route path="posts" element={<Postlists />} />
+          <Route path="post" element={<Post />} />
+          <Route path="image" element={<BasicRating />} />
         </Route>
       </Routes>
     </BrowserRouter>

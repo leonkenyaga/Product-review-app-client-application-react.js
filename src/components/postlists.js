@@ -22,11 +22,11 @@ class Postlists  extends Component {
    });
 }    
     render() { 
-       // const { posts } = this.state.posts
+       // const { posts } = this.state.posts/uploadFile
         const { posts,error } = this.state
         return (
             <div className= "postlist">
-             List of user  
+             List of users  
              {
                 posts.length ?
                 posts.map(post => <div key={post._id}>{post.name}</div>) : 

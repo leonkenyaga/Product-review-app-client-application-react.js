@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 .main1{
     background-color: rgb(21, 32, 43);
-    height: 700px;
+    height: 100vh;
+    color: white;
     font-family: Roboto;
+    font-size: medium;
 }
 .subdiv{
     height: 100px;
@@ -15,32 +17,30 @@
     width: 60px;
 }
 .subdiv1{
-    height: 140px;
-    margin-top: 100px;
+    height: 10%;
+    margin-top: 20%;
     color: white;
     text-align: center;
+    margin-bottom: 0%;
 }
 .subdiv2{
-    height: 300px;
-    margin-top: 30px;
+    height: 30%;
     color: white;
     text-align: center;
-    padding-top: 10px;
-    
+    margin-top: 0%;    
 }
 .input_div{
     height: 40px;
     margin-top: 50px;
     padding: 5px;
     border-bottom: 1px solid rgb(29, 161, 242);
-    width: 400px;
-    margin-left: 100px;
+    width: 70%;
+    margin-left: 5%;
 } 
 .input{
-    margin-right: 175px;
     color: rgb(131, 147, 160);
     background: none;
-    font-size: 16px;
+    font-size: 15px;
     background: none;
     border: none; 
 }
@@ -53,11 +53,11 @@
 .submission_div{
     margin-top: 20px;
     padding:10px;
-    width: 400px;
+    width: 80%;
 }
 .submission_button{
     background-color: green;
-    margin-right: 100px;
+    margin-right: 60%;
     color: white;
     border-radius: 10px;
     border:none;

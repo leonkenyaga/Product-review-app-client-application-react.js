@@ -2,17 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu');
 .main{
     background-color: rgb(21, 32, 43);
-    height: 700px;
+    height: 100vh;
     color: white;
     font-family: Roboto;
+    font-size: medium;
+
 }
+
 .subdiv{
     height: 100px;
     width: 100%;
     padding-top: 20px;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 70px 1fr;
+    grid-template-columns: 10fr 70px 11fr;
 
 }
 
@@ -21,26 +24,34 @@
     width: 60px;
 }
 .subdiv1{
-    height: 140px;
-    margin-top: 200px;
+    height: 10%;
+    margin-top: 40%;
     color: white;
     text-align: center;
 }
 .subdiv2{
     height: 100px;
-    margin-top: 20px;
     color: white;
+    margin-top: 10%;
     text-align: center;
+    display:flex;
+    align-items: center;
 }
 h1{
     margin-left: auto;
+    font-size: 170%;
 }
 
 .create_account_button{
     height:40px;
+    display:flex;
     background-color: green;
+    margin-left: 15%;
+    justify-content: center;
+    padding-top: 2%;
+
     color: white;
-    width: 900px;
+    min-width: 300px;
     border-radius: 23px;
     border:none;
 }
@@ -55,7 +66,7 @@ h1{
 .Loginbutton{
     background-color: green;
     color: white;
-    margin-left: 80%;
+    margin-left: 55%;
     border: none;
     margin-top: 5px;
     border-radius: 4px;

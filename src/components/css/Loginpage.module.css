@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap');
 .main{
     background-color: black;
-    height: 700px;
-    padding-top: 15%;
-    padding-left: 38%;
+    height: 100vh;
+    color: white;
     font-family: Roboto;
-    font-weight: 800;
+    font-size: medium;
+    padding-left: 12%;
+    padding-top: 50%;
 }
 .subdiv{
     background-color: rgb(21, 32, 43);
@@ -48,7 +49,6 @@
     border-radius: 10px;
 } 
 .input{
-    margin-right: 175px;
     background: none;
     font-size: 16px;
     background: none;
@@ -69,6 +69,7 @@
 .submission_button{
     background-color: green;
     color: white;
+    height: 40px;
     border-radius: 6px;
     border:none;
 }
