@@ -8,6 +8,7 @@ import SignUp from './components/SignUp';
 import Post from "./components/post";
 import BasicRating from "./components/image";
 import RecipeReviewCard from "./components/Card";
+import Write from "./components/Firebasewrite"
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +21,7 @@ function App() {
           <Route path="post" element={<Post />} />
           <Route path="image" element={<BasicRating />} />
           <Route path="post" element={<Post />} />
+          <Route path="write" element={<Write />} />
         </Route>
       </Routes>
     </BrowserRouter>
