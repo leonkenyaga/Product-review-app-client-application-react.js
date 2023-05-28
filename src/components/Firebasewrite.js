@@ -1,6 +1,8 @@
 import React,{Component} from "react";
 import {database} from "./Firebaseinnit"
-import {ref, set, get, update, remove, child } from "firebase/database"
+import { storage } from './Firebaseinnit';
+import { ref as ref_storage, getDownloadURL, uploadBytesResumable } from "firebase/storage";
+import {ref as ref_database, set, get, update, remove, child } from "firebase/database"
 
 
 
@@ -12,7 +14,8 @@ class Write extends Component{
             db: '',
             product:'',
             price:'',
-            description:''
+            description:'',
+            ImgURL:''
         }
         this.interface=this.interface.bind(this);
     }
@@ -23,6 +26,8 @@ class Write extends Component{
             }
         );
     }
+
+    
      
     render(){
         return(
@@ -40,11 +45,12 @@ class Write extends Component{
             onChange={e =>{this.setState({description: e.target.value});}}/>
             <br/>
             <div>
-        {
-          this.state.ImageUrl &&
-          <img src={this.state.ImageUrl} alt='uploaded file' height={500} />
-        } 
-            
+            <form onSubmit={this.handleSubmit} className='form'>
+        <input type='file' />
+        <button type='submit'>Upload</button>
+      </form>  
+    <img src={this.state.ImgUrl} alt='uploaded file' height={100} />
+     
             </div>
 
             <button id="addBtn" onClick={this.interface}>Add Data</button>
@@ -76,7 +82,29 @@ class Write extends Component{
     }
 
     
-
+    handleSubmit = (e) => {
+        e.preventDefault()
+        const file = e.target[0]?.files[0]
+        if (!file) return;
+        const storageRef = ref_storage(storage, `files/${file.name}`);
+        const uploadTask = uploadBytesResumable(storageRef, file);
+    
+        uploadTask.on("state_changed",
+          (snapshot) => {
+            const progress =
+              Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
+          },
+          (error) => {
+            alert(error);
+          },
+          () => {
+            getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+              this.setState({ImgURL : downloadURL})
+            });
+          }
+        );
+      }
+    
 
   //  getAllInputs(){
     //    return{
@@ -88,9 +116,10 @@ class Write extends Component{
 
     writeUserData() {
         const db = database;
-        set(ref(db, 'users/' + this.state.product), {
+        set(ref_database(db, 'users/' + this.state.product), {
           price:this.state.price,
-          description: this.state.description
+          description: this.state.description,
+          ImgURL:this.state.ImgURL
         })
          .then(()=>{alert("data was added successfully")})
          .catch((error)=>{alert("there was an error, details:"+ error)})
@@ -112,7 +141,7 @@ class Write extends Component{
     updateData(){
         const db=database;
         //const data= this.getAllInputs();
-        update(ref(db, `users/${this.state.product}`),
+        update(ref_database(db, `users/${this.state.product}`),
         {
 
          price:this.state.price,
@@ -124,13 +153,13 @@ class Write extends Component{
     }
     deleteData(){
         const db=database;
-        remove(ref(db, `users/${this.state.product}`))
+        remove(ref_database(db, `users/${this.state.product}`))
         .then(()=>{alert("data was deleted successfully")})
         .catch((error)=>{alert("there was an error, details:"+ error)})  
     }
 
    gettingData(){
-    const dbRef = ref(database);
+    const dbRef = ref_database(database);
     get(child(dbRef, `users/${this.state.product}`)).then((snapshot) => {
     if (snapshot.exists()) {
         alert("snapshot exists")
