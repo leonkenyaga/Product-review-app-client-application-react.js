@@ -38,7 +38,7 @@ export default function RecipeReviewCard() {
 
   return (
     <Box sx={{ width: 1/1 }}>
-    <Card sx={{ maxWidth: 19/20, margin: 1}}>
+    <Card sx={{ maxWidth: 20/20, margin: 0}}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="Porsche">
@@ -55,11 +55,11 @@ export default function RecipeReviewCard() {
       />
       <CardMedia
         component="iframe"
-        height= "220"
+        height= "225"
         src={Porsche}
         alt="Paella dish"
         allow="autoPlay"
-        sx={{ border: 0, borderRadius: 2}}
+        sx={{ border: 0, borderRadius: 0}}
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
