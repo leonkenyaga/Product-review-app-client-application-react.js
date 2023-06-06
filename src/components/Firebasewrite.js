@@ -46,7 +46,7 @@ class Write extends Component{
             <br/>
             <div>
             <form onSubmit={this.handleSubmit} className='form'>
-        <input type='file' />
+        <input type='file' multiple />
         <button type='submit'>Upload</button>
       </form>  
     <img src={this.state.ImgUrl} alt='uploaded file' height={100} />
