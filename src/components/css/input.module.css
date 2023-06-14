@@ -1,3 +1,32 @@
 .input{
     grid-template-columns: 30px 100px;
+    height:90hv;
+}
+.input1{
+    height: 85vh;
+    padding-top: 20vh;
+    
+}
+.productinput{
+    border: none;
+    margin-left:10%;
+    margin-bottom: 10%;
+}
+.input1 input:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+.priceinput{
+    margin-left: 0%;
+    border: none;
+
+}
+.input1 p{
+    margin-left:10%;
+    margin-bottom: 10%;
+}
+.input2{
+    position: absolute;
+    bottom: zero;
 }
