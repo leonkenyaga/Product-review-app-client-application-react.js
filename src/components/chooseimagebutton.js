@@ -7,7 +7,7 @@ const Chooseimagebutton = ({changeHandler}) => {
 
   return (
     <div className={styles.chooseimagebutton}>
-      <input accept="image/*" id="icon-button-file" onChange={changeHandler}
+      <input accept="image/*,video/*" id="icon-button-file" onChange={changeHandler}
         type="file" style={{ display: 'none' }} />
       <label htmlFor="icon-button-file">
         <IconButton color="primary" aria-label="upload picture" color="default"
