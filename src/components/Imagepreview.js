@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import  styles from "./css/imagepreview.module.css"
+import { style } from '@mui/system';
 
 
 function Imagepreview(props) {
@@ -36,13 +38,13 @@ function Imagepreview(props) {
       }
     }, [props.ImageFiles]);
     return (
-      <div className="App">
+      <div >
 {
           images.length > 0 ?
             <div>
               {
                 images.map((image, idx) => {
-                  return <p key={idx}> <img src={image} height={200} alt="" /> </p>
+                  return <div  className={styles.imagesection} key={idx}> <img className={styles.selectedimage}src={image}  alt="" /> </div>
                 })
               }
             </div> : null
