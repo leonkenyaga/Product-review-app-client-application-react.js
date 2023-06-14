@@ -4,7 +4,7 @@ import Imagepreview from "./Imagepreview";
 import Inputfield from "./Inputfield";
 import styles from "./css/input.module.css"
 
-const imageTypeRegex = /image\/(png|jpg|jpeg)/gm;
+const imageTypeRegex = /(image|video)/gm;
 
 const Input = () => {
   const [imageFiles, setImageFiles] = useState([]);
@@ -27,9 +27,19 @@ const Input = () => {
 
   return (
     <div className={styles.input}>
+
+      
+      <div className={styles.input1}>
+      <input className={styles.productinput} type="text" placeholder="What's new?"/>
+     <p>🤑 <input className={styles.priceinput} type="text" placeholder="price" /></p>
       <Imagepreview ImageFiles={imageFiles} />
+      </div>
+      
+      <div className={styles.input2}>
       <Chooseimagebutton changeHandler={changeHandler} /> 
-      <Inputfield />
+      <Inputfield Placeholder="Description"/>
+      </div>
+      
       </div>
   );
 };

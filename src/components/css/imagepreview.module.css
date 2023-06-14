@@ -1,0 +1,12 @@
+.selectedimage{
+    width:150px;
+    height: auto;
+    
+}
+.imagesection{
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
