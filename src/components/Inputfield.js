@@ -5,10 +5,10 @@ import styles from "./css/Inputfield.module.css"
 
 const ariaLabel = { 'aria-label': 'description' };
 
-export default function Inputfield() {
+export default function Inputfield(props) {
   return (
     <div className={styles.Inputfield}>
-      <Input placeholder="Description" inputProps={ariaLabel} color='success' />
+      <Input placeholder={props.Placeholder} inputProps={ariaLabel} color='success' />
     </div>
   );
 }
