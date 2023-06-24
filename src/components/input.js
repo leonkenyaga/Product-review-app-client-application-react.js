@@ -2,7 +2,7 @@ import { useState, React } from "react";
 import Chooseimagebutton from "./chooseimagebutton";
 import Imagepreview from "./Imagepreview";
 import Inputfield from "./Inputfield";
-import styles from "./css/input.module.css"
+import styles from "./css/input.module.css";
 
 const imageTypeRegex = /(image|video)/gm;
 
@@ -27,20 +27,28 @@ const Input = () => {
 
   return (
     <div className={styles.input}>
-
-      
       <div className={styles.input1}>
-      <input className={styles.productinput} type="text" placeholder="What's new?"/>
-     <p>🤑 <input className={styles.priceinput} type="text" placeholder="price" /></p>
-      <Imagepreview ImageFiles={imageFiles} />
+        <input
+          className={styles.productinput}
+          type="text"
+          placeholder="What's new?"
+        />
+        <p>
+          🤑{" "}
+          <input
+            className={styles.priceinput}
+            type="text"
+            placeholder="price"
+          />
+        </p>
+        <Imagepreview ImageFiles={imageFiles} />
       </div>
-      
+
       <div className={styles.input2}>
-      <Chooseimagebutton changeHandler={changeHandler} /> 
-      <Inputfield Placeholder="Description"/>
+        <Chooseimagebutton changeHandler={changeHandler} />
+        <Inputfield Placeholder="Description" />
       </div>
-      
-      </div>
+    </div>
   );
 };
 export default Input;
