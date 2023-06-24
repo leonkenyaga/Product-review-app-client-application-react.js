@@ -1,91 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
-.main{
-    background-color: rgb(21, 32, 43);
-    height: 100vh;
-    color: white;
-    font-family: Roboto;
-    font-size: medium;
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu");
+.main {
+  background-color: rgb(21, 32, 43);
+  height: 100vh;
+  color: white;
+  font-family: Roboto;
+  font-size: medium;
 }
 
-.subdiv{
-    height: 100px;
-    width: 100%;
-    padding-top: 20px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 10fr 70px 11fr;
-
+.subdiv {
+  height: 100px;
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 10fr 70px 11fr;
 }
 
-.leaf{
-    height: 60px;
-    width: 60px;
+.leaf {
+  height: 60px;
+  width: 60px;
 }
-.subdiv1{
-    height: 10%;
-    margin-top: 40%;
-    color: white;
-    text-align: center;
+.subdiv1 {
+  height: 10%;
+  margin-top: 40%;
+  color: white;
+  text-align: center;
 }
-.subdiv2{
-    height: 100px;
-    color: white;
-    margin-top: 10%;
-    text-align: center;
-    display:flex;
-    align-items: center;
+.subdiv2 {
+  height: 100px;
+  color: white;
+  margin-top: 10%;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
-h1{
-    margin-left: auto;
-    font-size: 170%;
+h1 {
+  margin-left: auto;
+  font-size: 170%;
 }
 
-.create_account_button{
-    height:40px;
-    display:flex;
-    background-color: green;
-    margin-left: 15%;
-    justify-content: center;
-    padding-top: 2%;
+.create_account_button {
+  height: 40px;
+  display: flex;
+  background-color: green;
+  margin-left: 15%;
+  justify-content: center;
+  padding-top: 2%;
 
-    color: white;
-    min-width: 300px;
-    border-radius: 23px;
-    border:none;
+  color: white;
+  min-width: 300px;
+  border-radius: 23px;
+  border: none;
 }
-.create_account_button:hover{
-    background-color: rgb(53, 94, 59);
+.create_account_button:hover {
+  background-color: rgb(53, 94, 59);
 }
-.create_account_button:focus{
-    outline: thin dotted;
-    outline: 0px auto -webkit-focus-ring-color;
-    outline-offset: 0px;
+.create_account_button:focus {
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
 }
-.Loginbutton{
-    background-color: green;
-    color: white;
-    margin-left: 55%;
-    border: none;
-    margin-top: 5px;
-    border-radius: 4px;
-    height: 40px;
+.Loginbutton {
+  background-color: green;
+  color: white;
+  margin-left: 55%;
+  border: none;
+  margin-top: 5px;
+  border-radius: 4px;
+  height: 40px;
 }
-.Loginbutton:hover{
-    background-color: rgb(53, 94, 59);
+.Loginbutton:hover {
+  background-color: rgb(53, 94, 59);
 }
-.Loginbutton:focus{
-    outline: thin dotted;
-    outline: 0px auto -webkit-focus-ring-color;
-    outline-offset: 0px;
+.Loginbutton:focus {
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
 }
-.leaf_div{
-
+.leaf_div {
 }
-.subdiv_button{
-
+.subdiv_button {
 }
-.left_div{
-
+.left_div {
 }
