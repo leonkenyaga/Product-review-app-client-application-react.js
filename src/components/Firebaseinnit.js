@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getStorage } from "firebase/storage";
-import {getDatabase} from "firebase/database"
+import { getDatabase } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -15,11 +15,11 @@ const firebaseConfig = {
   storageBucket: "flap-df663.appspot.com",
   messagingSenderId: "587619535530",
   appId: "1:587619535530:web:b3244e6634fb4289bcded3",
-  measurementId: "G-Y26EGMYBMB"
+  measurementId: "G-Y26EGMYBMB",
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const analytics = getAnalytics(app);
 export const storage = getStorage(app);
-export const database= getDatabase(app)
+export const database = getDatabase(app);

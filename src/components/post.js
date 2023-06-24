@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useState } from "react";
+import axios from "axios";
 
 const Post = () => {
   const [likes, setLikes] = useState([]);
   const [reviews, setReviews] = useState([]);
-  const [tag, setTag] = useState('');
+  const [tag, setTag] = useState("");
   const [images, setImages] = useState([]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData();
-    formData.append('likes', JSON.stringify(likes));
-    formData.append('tag', tag);
+    formData.append("likes", JSON.stringify(likes));
+    formData.append("tag", tag);
     reviews.forEach((item, index) => {
       formData.append(`reviews[${index}]`, item);
     });
@@ -19,20 +19,24 @@ const Post = () => {
       formData.append(`images[${index}]`, file);
     });
     try {
-      const response = await axios.post('http://localhost:4000/api/uploadFile', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
+      const response = await axios.post(
+        "http://localhost:4000/api/uploadFile",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
         }
-      });
-      console.log('Response:', response.data);
+      );
+      console.log("Response:", response.data);
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error:", error);
     }
   };
 
   const handleLikesChange = (event) => {
     const { value } = event.target;
-    const newLikes = value.split(',');
+    const newLikes = value.split(",");
     setLikes(newLikes);
   };
 
@@ -44,7 +48,7 @@ const Post = () => {
   };
 
   const handleAddReview = () => {
-    setReviews([...reviews, '']);
+    setReviews([...reviews, ""]);
   };
 
   const handleRemoveReview = (index) => {
@@ -99,15 +103,20 @@ const Post = () => {
       <br />
       <label>
         Images:
-        <input type="file" name="images" multiple onChange={handleImagesChange} />
+        <input
+          type="file"
+          name="images"
+          multiple
+          onChange={handleImagesChange}
+        />
       </label>
       <br />
       <button type="submit">Submit</button>
     </form>
   );
-}
+};
 
- /* const [formData, setFormData] = useState({
+/* const [formData, setFormData] = useState({
     images: null,
     tag: '',
     reviews:"",
@@ -166,7 +175,6 @@ const Post = () => {
         </form>
         </div>
   );*/
-
 
 export default Post;
 /*class Post  extends Component {

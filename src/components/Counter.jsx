@@ -3,9 +3,9 @@ import { Outlet } from "react-router-dom";
 const Counter = () => {
   return (
     <>
-       <Outlet />
+      <Outlet />
     </>
-  )
+  );
 };
 
 export default Counter;

@@ -1,20 +1,20 @@
-import * as React from 'react';
-import { Box, ThemeProvider, createTheme } from '@mui/system';
+import * as React from "react";
+import { Box, ThemeProvider, createTheme } from "@mui/system";
 
 const theme = createTheme({
   palette: {
     background: {
-      paper: '#fff',
+      paper: "#fff",
     },
     text: {
-      primary: '#173A5E',
-      secondary: '#46505A',
+      primary: "#173A5E",
+      secondary: "#46505A",
     },
     action: {
-      active: '#001E3C',
+      active: "#001E3C",
     },
     success: {
-      dark: '#009688',
+      dark: "#009688",
     },
   },
 });
