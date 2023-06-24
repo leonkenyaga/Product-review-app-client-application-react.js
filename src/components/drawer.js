@@ -1,23 +1,22 @@
-import { useRef, useEffect } from 'react';
-import cn from 'classnames';
-import "./css/drawer.css"
+import { useRef, useEffect } from "react";
+import cn from "classnames";
+import "./css/drawer.css";
 
 const Drawer = ({
-    isOpen,
-    children,
-    className,
-    onClose,
-    position = 'left',
-  }) => {
+  isOpen,
+  children,
+  className,
+  onClose,
+  position = "left",
+}) => {
+  const bodyRef = useRef(document.querySelector("body"));
 
-    const bodyRef = useRef(document.querySelector('body'));
-
-	useEffect(() => {
+  useEffect(() => {
     const updatePageScroll = () => {
       if (isOpen) {
-        bodyRef.current.style.overflow = 'hidden';
+        bodyRef.current.style.overflow = "hidden";
       } else {
-        bodyRef.current.style.overflow = '';
+        bodyRef.current.style.overflow = "";
       }
     };
 
@@ -28,18 +27,15 @@ const Drawer = ({
       aria-hidden={isOpen ? "false" : "true"}
       className={cn("drawer-container", {
         open: isOpen,
-        className
+        className,
       })}
     >
-      <div
-        className={cn("drawer", position)}
-        role="dialog"
-      >
+      <div className={cn("drawer", position)} role="dialog">
         {children}
       </div>
       <div className="backdrop" onClick={onClose} />
     </div>
   );
-    }
+};
 
 export default Drawer;
