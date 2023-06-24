@@ -1,15 +1,15 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Rating from '@mui/material/Rating';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Rating from "@mui/material/Rating";
 
 export default function BasicRating() {
-  var defaultValue=0
+  var defaultValue = 0;
   const [value, setValue] = React.useState(defaultValue);
-  defaultValue=value
+  defaultValue = value;
   return (
     <Box
       sx={{
-        '& > legend': { mt: 2 },
+        "& > legend": { mt: 2 },
       }}
     >
       <Rating
@@ -19,7 +19,6 @@ export default function BasicRating() {
           setValue(newValue);
         }}
       />
-     
     </Box>
   );
 }
