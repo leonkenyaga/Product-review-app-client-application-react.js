@@ -1,22 +1,28 @@
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import IconButton from '@material-ui/core/IconButton';
-import styles from "./css/chooseimagebutton.module.css"
+import PhotoCamera from "@material-ui/icons/PhotoCamera";
+import IconButton from "@material-ui/core/IconButton";
+import styles from "./css/chooseimagebutton.module.css";
 
-
-const Chooseimagebutton = ({changeHandler}) => {
-
+const Chooseimagebutton = ({ changeHandler }) => {
   return (
     <div className={styles.chooseimagebutton}>
-      <input accept="image/*,video/*" id="icon-button-file" onChange={changeHandler}
-        type="file" style={{ display: 'none' }} />
+      <input
+        accept="image/*,video/*"
+        id="icon-button-file"
+        onChange={changeHandler}
+        type="file"
+        style={{ display: "none" }}
+      />
       <label htmlFor="icon-button-file">
-        <IconButton color="primary" aria-label="upload picture" color="default"
-        component="span">
+        <IconButton
+          aria-label="upload picture"
+          color="default"
+          component="span"
+        >
           <PhotoCamera />
         </IconButton>
-      </label> 
+      </label>
     </div>
   );
-}
- 
+};
+
 export default Chooseimagebutton;
